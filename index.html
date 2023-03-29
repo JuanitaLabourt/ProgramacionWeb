@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Log de Unipedia" width="80" height="50">
+        <img src="logo.jpg" alt="Log de Unipedia" width="60" height="50">
     </header>
-    <h1 style="font-size: 80px;">UNIPEDIA</h1>
+    <h1 style="font-size: 50px;">UNIPEDIA</h1>
     <h3><i>Elegir una carrera teniendo tantas opciones es difícil por eso en Unipedia queremos facilitarte la búsqueda.</i></h3>
     <form action="/buscar" method="get">
         <label for="filtro-universidad">Universidad:</label>
         <select id="filtro-universidad" name="universidad">
-          <option value="">Todas</option>
+          <option value="Todas">Todas</option>
           <option value="Austral">Austral</option>
           <option value="Favaloro">Favaloro</option>
           <option value="ITBA">ITBA</option>
@@ -29,14 +29,48 @@
         
         <label for="filtro-orientacion">Orientación:</label>
         <select id="filtro-orientacion" name="orientacion">
-          <option value="relevancia">Relevancia</option>
-          <option value="fecha">Fecha</option>
-          <option value="popularidad">Popularidad</option>
+          <option value="Todas">Todas</option>
+          <option value="Agronomía">Agronomía</option>
+          <option value="Arquitectura">Arquitectura</option>
+          <option value="Ciencias Económicas">Ciencias Económicas</option>
+          <option value="Ciencias Exactas y Naturales">Ciencias Exactas y Naturales</option>
+          <option value="Ciencias Sociales">Ciencias Sociales</option>
+          <option value="Ciencias Veterinarias">Ciencias Veterinarias</option>
+          <option value="Derecho">Derecho</option>
+          <option value="Diseño">Diseño</option>
+          <option value="Ingeniería">Ingeniería</option>
+          <option value="Medicina">Medicina</option>
+          <option value="Psicología">Psicología</option>
         </select>
         
+        <label for="filtro-modalidad">Modalidad:</label>
+        <select id="filtro-modalidad" name="modalidad">
+          <option value="Todas">Todas</option>
+          <option value="Presencial">Presencial</option>
+          <option value="Semi presencial">Semi presencial</option>
+          <option value="Virtual">Virtual</option>
+        </select>
         <input type="submit" value="Buscar">
       </form>
-      
+</body>
+<body>
+<table>
+  <tr>
+    <td><img src="logo austral.png" alt="Logo de la Universidad Austral" title="Universidad Austral"/></td>
+    <td><img src="logo ditella.png" alt="Logo de la Universidad Di Tella" title="Universidad Torcuato Di Tella"/></td>
+    <td><img src="logo favaloro.png" alt="Logo de la Universidad Favaloro" title="Univerisad Favaloro"/></td>
+    <td><img src="logo itba.png" width="250" alt="Logo del ITBA" title="Instituto Tecnológico de Buenos Aires"/></td>
+    <td><img src="logo san andres.png" alt="Logo de la Universidad de San Andrés" title="Universidad de San Andrés"/></td>
+  </tr>
+  <tr>
+    <td><img src="logo ub.png" width="180" alt="Logo de la Universidad de Belgrano" title="Universidad de Belgrano"/></td>
+    <td><img src="logo uba.png" width="180" alt="Logo de la Universidad de Buenos Aires" title="Universidad de Buenos Aires"/></td>
+    <td><img src="logo uca.png" width="210" alt="Logo de la Universidad Católica Argentina" title="Universidad Catolica Argentina"/></td>
+    <td><img src="logo up.png" width="200" alt="Logo de la Universidad de Palermo" title="Universidad de Palermo"/></td>
+    <td><img src="logo usal.png" width="260" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></td>
+  </tr>
+</table>
+
 </body>
 
 </head>
