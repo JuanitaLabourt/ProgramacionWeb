@@ -1,4 +1,4 @@
-body {background-color: #7ab1eb;}
+body {background-color: rgb(25, 3, 89);}
 
 div{text-align: center;
     color: white;
@@ -8,7 +8,7 @@ div{text-align: center;
 h3{color: white;}
 
 form{
-    color: aliceblue;
+    color: white;
     font-size: 25px;
     align-items: center;
     }
