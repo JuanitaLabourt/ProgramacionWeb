@@ -16,4 +16,8 @@ p {color: white;
     padding: 10px;
     background-color: rgb(89, 138, 217) ;
     margin: 4px;
-    text-align: center;}
+    text-align: left;}
+
+.tableaustral{
+    align-content: center;
+}
