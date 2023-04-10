@@ -2,7 +2,9 @@ body {background-color: rgb(28, 9, 84);}
 
 div{text-align: center;
     color: white;
-    font-family: 'Arvo', serif;}
+    font-family: 'Mulish', sans-serif;
+    
+}
 
 
 h3{color: white;
@@ -11,15 +13,13 @@ h3{color: white;
 form{
     color: white;
     font-size: 25px;
-    align-items: center;
-    }
+    align-items: center;}
     
 
 table, th, td {
     border: 3px solid black;
     border-collapse: collapse;
     background-color: white;
-    align-items: center;
-  }
+    align-items: center;}
 
   
