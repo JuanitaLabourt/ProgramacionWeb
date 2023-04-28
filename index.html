@@ -11,63 +11,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat&family=Mulish&display=swap" rel="stylesheet">
   </head>
 <body>
-    <header>
-        <img src="./Logos/logo.jpg" alt="Logo de Unipedia" width="60" height="50">
-    </header>
-    <div>Unipedia</div>
-    <h3><i>Elegir una carrera teniendo tantas opciones es difícil por eso en Unipedia queremos facilitarte la búsqueda.</i></h3>
-    <form action="/buscar" method="get">
-        <label for="filtro-universidad">Universidad:</label>
-        <select id="filtro-universidad" name="universidad">
-          <option value="Todas">Todas</option>
-          <option value="ITBA">ITBA</option>
-          <option value="Uniersidad Austral">Universidad Austral</option>
-          <option value="Universidad de Buenos Aires">Universidad de Buenos Aires</option>
-          <option value="Universiad de San Andrés">Universidad de San Andrés</option>
-          <option value="Universidad del Salvador">Universidad del Salvador</option>
-          <option value="Universidad Torcuato Di Tella">Universidad Torcuato Di Tella</option>
-        </select>
-        
-        <label for="filtro-carreras">Carreras:</label>
-        <select id="filtro-carreras" name="carreras">
-          <option value="Todas">Todas</option>
-          <option value="Administración">Administración</option>
-          <option value="Arquitectura">Arquitectura</option>
-          <option value="Ciencias políticas">Ciencias políticas</option>
-          <option value="Comunicación">Comunicación</option>
-          <option value="Derecho">Derecho</option>
-          <option value="Diseño">Diseño</option>
-          <option value="Economía">Economía</option>
-          <option value="Ingeniería industrial">Ingeniería industrial</option>
-          <option value="Ingeniería informática">Ingeniería informática</option>
-          <option value="Ingeniería naval">Ingeniería naval</option>
-          <option value="Medicina">Medicina</option>
-          <option value="Psicología">Psicología</option>
-          <option value="Relaciones internacionales">Relaciones internacionales</option>
-        </select>
-        
-        <label for="filtro-modalidad">Modalidad:</label>
-        <select id="filtro-modalidad" name="modalidad">
-          <option value="Todas">Todas</option>
-          <option value="Presencial">Presencial</option>
-          <option value="Semi presencial">Semi presencial</option>
-          <option value="Virtual">Virtual</option>
-        </select>
-        <input type="submit" value="Buscar">
-      </form>
-
-  <table>
-    <tr>
-      <td><a href="./Austral/austral.html"><img src="./Logos/logo austral.png" alt="Logo de la Universidad Austral" title="Universidad Austral"/></a></td>
-      <td><a href="./Di Tella/DiTella.html"><img src="./Logos/logo ditella.png" alt="Logo de la Universidad Di Tella" title="Universidad Torcuato Di Tella"/></a></td>
-      <td><a href="./ITBA/itba.html"><img src="./Logos/logo itba.png" width="250" alt="Logo del ITBA" title="Instituto Tecnológico de Buenos Aires"/></a></td>
-    </tr>
-    <tr>
-      <td><a href="./San Andres/SanAndres.html"><img src="./Logos/logo san andres.png" alt="Logo de la Universidad de San Andrés" title="Universidad de San Andrés"/></a></td>
-      <td><a href="./UBA/uba.html"><img src="./Logos/logo uba.png" width="180" alt="Logo de la Universidad de Buenos Aires" title="Universidad de Buenos Aires"/></a></td>
-      <td><a href="./USAL/usal.html"><img src="./Logos/logo usal.png" width="230" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></a></td>
-    </tr>
-</table>
+  <div class="container">
+    <div class="izquierda">
+      <div class="titulo">Unipedia</div>
+      <h3><i>Elegir una carrera teniendo tantas opciones es difícil por eso en Unipedia queremos facilitarte la búsqueda.</i></h3>
+      <form action="/buscar" method="get">
+          <label for="filtro-universidad">Universidad:</label>
+          <select id="filtro-universidad" name="universidad">
+            <option value="Todas">Todas</option>
+            <option value="ITBA">ITBA</option>
+            <option value="Uniersidad Austral">Universidad Austral</option>
+            <option value="Universidad de Buenos Aires">Universidad de Buenos Aires</option>
+            <option value="Universiad de San Andrés">Universidad de San Andrés</option>
+            <option value="Universidad del Salvador">Universidad del Salvador</option>
+            <option value="Universidad Torcuato Di Tella">Universidad Torcuato Di Tella</option>
+          </select>
+          
+          <label for="filtro-carreras">Carreras:</label>
+          <select id="filtro-carreras" name="carreras">
+            <option value="Todas">Todas</option>
+            <option value="Administración">Administración</option>
+            <option value="Arquitectura">Arquitectura</option>
+            <option value="Ciencias políticas">Ciencias políticas</option>
+            <option value="Comunicación">Comunicación</option>
+            <option value="Derecho">Derecho</option>
+            <option value="Diseño">Diseño</option>
+            <option value="Economía">Economía</option>
+            <option value="Ingeniería industrial">Ingeniería industrial</option>
+            <option value="Ingeniería informática">Ingeniería informática</option>
+            <option value="Ingeniería naval">Ingeniería naval</option>
+            <option value="Medicina">Medicina</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Relaciones internacionales">Relaciones internacionales</option>
+          </select>
+          
+          <label for="filtro-modalidad">Modalidad:</label>
+          <select id="filtro-modalidad" name="modalidad">
+            <option value="Todas">Todas</option>
+            <option value="Presencial">Presencial</option>
+            <option value="Semi presencial">Semi presencial</option>
+            <option value="Virtual">Virtual</option>
+          </select>
+          <input type="submit" value="Buscar">
+        </form>
+      </div>
+    <div class="derecha-uno">
+      <a href="./Austral/austral.html"><img src="./Logos/logo austral.png" alt="Logo de la Universidad Austral" title="Universidad Austral"/></a>
+      <a href="./Di Tella/DiTella.html"><img src="./Logos/logo ditella.png" alt="Logo de la Universidad Di Tella" title="Universidad Torcuato Di Tella"/></a>
+      <a href="./ITBA/itba.html"><img src="./Logos/logo itba.png" width="250" alt="Logo del ITBA" title="Instituto Tecnológico de Buenos Aires"/></a>
+    </div>
+      <div class="derecha-dos">
+      <a href="./San Andres/SanAndres.html"><img src="./Logos/logo san andres.png" alt="Logo de la Universidad de San Andrés" title="Universidad de San Andrés"/></a>
+      <a href="./UBA/uba.html"><img src="./Logos/logo uba.png" width="180" alt="Logo de la Universidad de Buenos Aires" title="Universidad de Buenos Aires"/></a>
+      <a href="./USAL/usal.html"><img src="./Logos/logo usal.png" width="230" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></a>
+    </div>
+  </div>
 
 </body>
 
