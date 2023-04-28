@@ -5,7 +5,6 @@ body {background-color: rgb(28, 9, 84);}
     font-size: 60px;
     font-family: 'Mulish', sans-serif;}
 
-
 h3{color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;}
@@ -24,19 +23,18 @@ form{
         "izquierda derecha-uno derecha-dos"
         "izquierda derecha-uno derecha-dos"
         "izquierda derecha-uno derecha-dos";
-      }
+    
+
+    }
       
 .izquierda { grid-area: izquierda; }
       
-.derecha-uno { grid-area: derecha-uno;     background-color: white;}
-      
-.derecha-dos { grid-area: derecha-dos;     background-color: white;}
-
-.derecha-uno  img{
-min-width: 300px;
+.derecha-uno { grid-area: derecha-uno;       align-items: center;
 }
-.derecha-dos img{
-    min-width: 300px;
+      
+.derecha-dos { grid-area: derecha-dos;    align-items: center;
+}
 
-    }
-  
+.derecha-uno  img{min-width: 300px;}
+
+.derecha-dos img{min-width: 300px;}
