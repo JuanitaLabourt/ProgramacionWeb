@@ -1,9 +1,36 @@
+.sticky { grid-area: sticky; 
+    position: sticky;
+    top: 0;}
+
+.ppal{
+    display: flexbox;
+}
+.logo-principal {
+    display: flex;
+    justify-content: left;}
+
+.titulo {
+    display: flex;
+    justify-content: left;} 
+    
+.botones-der{
+    display: flex;
+    justify-content: right;}
+
+.buscador { grid-area: buscador; }
+  
+.universidades { grid-area: universidades; }    
+
+
+
+
+
+
+
+
 body {background-color: rgb(28, 9, 84);}
 *{border:1px solid red}
-.titulo{text-align: center;
-    color: white;
-    font-size: 60px;
-    font-family: 'Mulish', sans-serif;}
+
 
 h3{color: white;
     font-family: 'Montserrat', sans-serif;
@@ -14,27 +41,3 @@ form{
     font-size: 25px;
     align-items: center;}
 
-.container {  display: grid;
-    grid-template-columns: 6fr 3fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "izquierda derecha-uno derecha-dos"
-        "izquierda derecha-uno derecha-dos"
-        "izquierda derecha-uno derecha-dos";
-    
-
-    }
-      
-.izquierda { grid-area: izquierda; }
-      
-.derecha-uno { grid-area: derecha-uno;       align-items: center;
-}
-      
-.derecha-dos { grid-area: derecha-dos;    align-items: center;
-}
-
-.derecha-uno  img{min-width: 300px;}
-
-.derecha-dos img{min-width: 300px;}
