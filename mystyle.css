@@ -1,6 +1,7 @@
 .sticky { grid-area: sticky; 
     position: sticky;
-    top: 0;}
+    top: 0;
+    background-color: rgb(73, 126, 224);}
 
 .ppal{
     display: flexbox;
@@ -17,7 +18,8 @@
     display: flex;
     justify-content: right;}
 
-.buscador { grid-area: buscador; }
+.buscador { grid-area: buscador; 
+    background-color: white;}
   
 .universidades { grid-area: universidades; }    
 
