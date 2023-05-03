@@ -1,45 +1,85 @@
+body {margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(28, 9, 84);}
+
 .sticky { grid-area: sticky; 
     position: sticky;
     top: 0;
     background-color: rgb(73, 126, 224);}
 
-.ppal{
-    display: flexbox;
-}
-.logo-principal {
-    display: flex;
-    justify-content: left;}
+.container{
+    display: flex;}
 
-.titulo {
-    display: flex;
-    justify-content: left;} 
-    
+.espacio{
+    flex-grow: 10;}
+
+.logo-principal {
+    flex-direction: flex-start;
+    text-align: center;
+    align-self: center;}
+
+.titulo-principal {
+    flex-direction: flex-start;
+    justify-content: left;
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+    font-size: 40px;
+    color: white;}
+
 .botones-der{
-    display: flex;
-    justify-content: right;}
+    flex-direction: flex-end;
+    justify-content: right;
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+    color: white;}    
+
 
 .buscador { grid-area: buscador; 
-    background-color: white;}
-  
-.universidades { grid-area: universidades; }    
+    background-color: rgb(28, 9, 84);
+    color: white;}
 
-
-
-
-
-
-
-
-body {background-color: rgb(28, 9, 84);}
-*{border:1px solid red}
-
-
-h3{color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;}
+.busco-carreras {
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;}
 
 form{
     color: white;
     font-size: 25px;
-    align-items: center;}
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;}  
+
+
+.universidades { grid-area: universidades; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-right: 130px;
+    justify-content: space-around;
+    background-color: rgb(28, 9, 84);} 
+
+.tamaño-foto {
+    width: 250px;
+    height: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;}
+
+
+
+
+
+
+
+/*{border:1px solid red}
+/*body {background-color: rgb(28, 9, 84);}
+
+
+
+
+
 

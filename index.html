@@ -12,18 +12,17 @@
   </head>
 <body>
   <div class="sticky">
-    <div class="ppal">
-    <div class="logo-principal"><img src="./Logos/logo.jpg" alt="Logo de Unipedia" width="70px"></div>
-    <div class="titulo-principal">Unipedia</div>
-    <div class="botones-der">
-      <div><h4>Home</h4></div>
-      <div><h4>Carreras</h4></div>
-      <div><h4>Quiénes somos</h4></div>
-    </div>
+    <div class="container">
+      <div class="logo-principal"><img src="./Logos/logo.jpg" alt="Logo de Unipedia" width="70px"></div>
+      <div class="titulo-principal"><b>Unipedia</b></div>
+      <div class="espacio"></div>
+      <div class="botones-der"><h4>Home</h4></div>
+      <div class="botones-der"><h4>Carreras</h4></div>
+      <div class="botones-der"><h4>Quiénes somos</h4></div>
     </div>
   </div>
   <div class="buscador">
-    <h3><i>Elegir una carrera teniendo tantas opciones es difícil por eso en Unipedia queremos facilitarte la búsqueda.</i></h3>
+    <div class="busco-carreras"><b>BUSCO CARRERAS</b></div>
     <form action="/buscar" method="get">
         <label for="filtro-universidad">Universidad:</label>
         <select id="filtro-universidad" name="universidad">
@@ -65,16 +64,12 @@
       </form>
   </div>
   <div class="universidades">
-    <div class="primera-fila">
-    <div class="LogoAustral"><a href="./Austral/austral.html"><img src="./Logos/logo austral.png" alt="Logo de la Universidad Austral" title="Universidad Austral"/></a></div>
-    <a href="./Di Tella/DiTella.html"><img src="./Logos/logo ditella.png" alt="Logo de la Universidad Di Tella" title="Universidad Torcuato Di Tella"/></a>
-    <div class="LogoITBA"><a href="./ITBA/itba.html"><img src="./Logos/logo itba.png" width="250" alt="Logo del ITBA" title="Instituto Tecnológico de Buenos Aires"/></a></div>
-    </div>
-    <div class="segunda-fila">
-    <a href="./San Andres/SanAndres.html"><img src="./Logos/logo san andres.png" alt="Logo de la Universidad de San Andrés" title="Universidad de San Andrés"/></a>
-    <a href="./UBA/uba.html"><img src="./Logos/logo uba.png" width="180" alt="Logo de la Universidad de Buenos Aires" title="Universidad de Buenos Aires"/></a>
-    <a href="./USAL/usal.html"><img src="./Logos/logo usal.png" width="230" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></a>
-    </div>
+    <a href="./Austral/austral.html"><img class="tamaño-foto" src="./Logos/logo austral.png" alt="Logo de la Universidad Austral" title="Universidad Austral"/></a>
+    <a href="./Di Tella/DiTella.html"><img class="tamaño-foto" src="./Logos/logo ditella.png" alt="Logo de la Universidad Di Tella" title="Universidad Torcuato Di Tella"/></a>
+    <a href="./ITBA/itba.html"><img class="tamaño-foto" src="./Logos/logo itba.png" width="250" alt="Logo del ITBA" title="Instituto Tecnológico de Buenos Aires"/></a>
+    <a href="./San Andres/SanAndres.html"><img class="tamaño-foto" src="./Logos/logo san andres.png" alt="Logo de la Universidad de San Andrés" title="Universidad de San Andrés"/></a>
+    <a href="./UBA/uba.html"><img class="tamaño-foto" src="./Logos/logo uba.png" width="180" alt="Logo de la Universidad de Buenos Aires" title="Universidad de Buenos Aires"/></a>
+    <a href="./USAL/usal.html"><img class="tamaño-foto" src="./Logos/logo usal.png" width="230" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></a>
   </div>   
 </div>
 
