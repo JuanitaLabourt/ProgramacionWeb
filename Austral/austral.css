@@ -46,13 +46,18 @@ p {color: white;
     font-size: 15px;}
 
 .carrera{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-right: 130px;
+    justify-content: space-around;
     color: white;
     font-size: 20px;
-
     padding: 10px;
     background-color: rgb(89, 138, 217) ;
     margin: 4px;
-    text-align: left;}
+    text-align: left;
+    }
 
 .tableaustral{
     align-content: center;
