@@ -34,6 +34,8 @@ body {margin: 0px;
     align-self: center;
     text-align: center;
     color: white;}    
+p {
+    color: rgb(16, 51, 168);}
 
 
 .buscador { grid-area: buscador; 
@@ -68,6 +70,8 @@ form{
     height: 250px;
     margin-top: 15px;
     margin-bottom: 15px;}
+.tamaño-foto:hover{
+    opacity: 0.5;}
 
 
 @media screen and (max-width: 600px) {

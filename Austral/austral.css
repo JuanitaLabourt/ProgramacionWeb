@@ -35,7 +35,9 @@ body {margin: 0px;
     text-align: center;
     color: white;} 
 
-
+    
+.ubicacion {
+    color: rgb(16, 51, 168);}
 
 .informacion {color: white;
     margin-top: 20px;
@@ -60,3 +62,74 @@ p {color: white;
     background-color: rgb(89, 138, 217) ;
     margin: 10px;
     text-align: left;}
+
+
+@media screen and (max-width: 600px) {
+    body {margin: 0px;
+        background-color: rgb(28, 9, 84);
+        font-family: 'Montserrat', sans-serif;}
+    
+    .sticky { grid-area: sticky; 
+        position: sticky;
+        top: 0;
+        background-color: rgb(73, 126, 224);}
+    
+    .container{
+        display: flex;}
+    
+    .espacio{
+        flex-grow: 10;}
+    
+    .logo-principal {
+        flex-direction: flex-start;
+        text-align: center;
+        align-self: center;}
+    
+    .titulo-principal {
+        flex-direction: flex-start;
+        justify-content: left;
+        flex-grow: 1;
+        text-align: center;
+        align-self: center;
+        font-size: 25px;
+        color: white;}
+    
+    .botones-der{
+        flex-direction: flex-end;
+        justify-content: right;
+        flex-grow: 1;
+        align-self: center;
+        text-align: center;
+        color: white;
+        font-size: 15px;} 
+    
+    .ubicacion {
+        color: rgb(16, 51, 168);}
+     
+
+    .informacion {color: white;
+        margin-top: 20px;
+        font-size: 40px;}
+    
+    .nombre-universidad {
+        font-size: 30px;}
+
+    p {color: white;
+        text-align: justify;
+        font-size: 12px;
+        margin-bottom: 30px;}
+    
+    .carreras{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-around;}
+    
+    .nombre-carrera {
+        color: white;
+        font-size: 15px;
+        padding: 13px;
+        background-color: rgb(89, 138, 217) ;
+        margin: 7px;
+        text-align: left;}}
