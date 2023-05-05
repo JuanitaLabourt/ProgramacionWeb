@@ -6,7 +6,7 @@ body {margin: 0px;
     position: sticky;
     top: 0;
     background-color: rgb(73, 126, 224);}
-
+    
 .container-header{
     display: flex;}
 
@@ -38,6 +38,8 @@ h4 {
     font-size: 16px;}
 
     
+
+
 .ubicacion {
     color: rgb(16, 51, 168);}
 
@@ -69,6 +71,7 @@ p {color: white;
     background-color: rgb(89, 138, 217) ;
     margin: 10px;
     text-align: left;}
+
 
 
 @media screen and (max-width: 600px) {
@@ -142,3 +145,4 @@ p {color: white;
 
 
         .card{min-height: 200px; margin-bottom: 10px;}
+        .card-title{min-height: 50px;}
