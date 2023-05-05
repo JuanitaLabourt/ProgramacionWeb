@@ -7,7 +7,7 @@ body {margin: 0px;
     top: 0;
     background-color: rgb(73, 126, 224);}
 
-.container{
+.container-header{
     display: flex;}
 
 .espacio{
@@ -15,8 +15,7 @@ body {margin: 0px;
 
 .logo-principal {
     flex-direction: flex-start;
-    text-align: center;
-    align-self: center;}
+    padding: 10px ;}
 
 .titulo-principal {
     flex-direction: flex-start;
@@ -35,6 +34,9 @@ body {margin: 0px;
     text-align: center;
     color: white;} 
 
+h4 {
+    font-size: 16px;}
+
     
 .ubicacion {
     color: rgb(16, 51, 168);}
@@ -43,10 +45,15 @@ body {margin: 0px;
     margin-top: 20px;
     font-size: 40px;}
 
+.nombre-universidad {
+    margin-left: 10px;}
+
 p {color: white;
     text-align: justify;
     font-size: 15px;
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;}
 
 .carreras{
     display: flex;
@@ -82,8 +89,7 @@ p {color: white;
     
     .logo-principal {
         flex-direction: flex-start;
-        text-align: center;
-        align-self: center;}
+        padding: 10px ;}
     
     .titulo-principal {
         flex-direction: flex-start;
@@ -133,3 +139,6 @@ p {color: white;
         background-color: rgb(89, 138, 217) ;
         margin: 7px;
         text-align: left;}}
+
+
+        .card{min-height: 200px; margin-bottom: 10px;}

@@ -15,8 +15,7 @@ body {margin: 0px;
 
 .logo-principal {
     flex-direction: flex-start;
-    text-align: center;
-    align-self: center;}
+    padding: 10px ;}
 
 .titulo-principal {
     flex-direction: flex-start;
@@ -36,6 +35,8 @@ body {margin: 0px;
     color: white;}    
 p {
     color: rgb(16, 51, 168);}
+h4 {
+    font-size: 16px;}
 
 
 .buscador { grid-area: buscador; 
