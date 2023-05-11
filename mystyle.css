@@ -137,7 +137,6 @@ form{
     .universidades { grid-area: universidades; 
         display: flex;
         flex-wrap: wrap;
-        margin-left: 120px;
         margin-right: 120px;
         justify-content: space-around;
         background-color: rgb(28, 9, 84);} 
