@@ -73,7 +73,7 @@ form{
     opacity: 0.5;}
 
 footer{
-    padding: 50px;
+    padding: 20px;
     background-color: rgb(73, 126, 224);}    
 
 .pie-pag {  display: grid;
@@ -91,9 +91,10 @@ footer{
 
 .info-der { grid-area: info-der; }
  
-.tit{font-size: 30px;
+.tit{font-size: 25px;
     color: white;}
-.inf{color: white;}
+.inf{color: white;
+    font-size: 15px;}
 
 
 @media screen and (max-width: 600px) {
