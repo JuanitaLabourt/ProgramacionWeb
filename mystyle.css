@@ -74,6 +74,29 @@ form{
 .tamaño-foto:hover{
     opacity: 0.5;}
 
+footer{
+    padding: 50px;
+    background-color: rgb(73, 126, 224);}    
+
+.pie-pag {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "info-izq . info-der"
+        "info-izq . info-der"
+        "info-izq . info-der";
+    font-size: 20px;}
+    
+.info-izq { grid-area: info-izq; }
+
+.info-der { grid-area: info-der; }
+ 
+.tit{font-size: 30px;
+    color: white;}
+.inf{color: white;}
+
 
 @media screen and (max-width: 600px) {
     body {margin: 0px;
