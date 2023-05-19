@@ -32,8 +32,9 @@ body {margin: 0px;
     flex-grow: 1;
     align-self: center;
     text-align: center;
-    color: white;}    
-p {color: rgb(16, 51, 168);}
+    color: white;}
+
+.bot-inicio{color: rgb(16, 51, 168);} 
 h4 {font-size: 16px;}
 
 
@@ -61,6 +62,7 @@ form{
     flex-wrap: wrap;
     margin-left: 130px;
     margin-right: 130px;
+    margin-bottom: 15px;
     justify-content: space-around;
     background-color: rgb(28, 9, 84);} 
 
@@ -87,7 +89,8 @@ footer{
         "info-izq . info-der";
     font-size: 20px;}
     
-.info-izq { grid-area: info-izq; }
+.info-izq { grid-area: info-izq; 
+    margin-left: 50px;}
 
 .info-der { grid-area: info-der; }
  
@@ -95,6 +98,10 @@ footer{
     color: white;}
 .inf{color: white;
     font-size: 15px;}
+.tamaño-foto-pie{
+    width: 2vw;}
+.tamaño-foto-pie:hover{
+    opacity: 0.5;}
 
 
 @media screen and (max-width: 600px) {
@@ -173,7 +180,7 @@ footer{
 /* IDEA PARA JAVA SCRIPT: Hacer un carrito de favoritos donde pueden agragar una carrera que le guste.
 /* Lo de filtros ya es JavaScript
 /* Hacer carrusel de imagenes, con las imagenes de cada campus, de adentro de la fac.
-
+/*corregir titulo unipedia y el logo
 
 /*{border:1px solid red}
 /*body {background-color: rgb(28, 9, 84);}
