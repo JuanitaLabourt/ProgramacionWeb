@@ -71,6 +71,7 @@ p {color: white;
     margin-right: 10px;}
 
 .tit-carreras{
+    color: white;
     text-align: center;
     font-size: 30px;
     margin-bottom: 15px;}
@@ -90,7 +91,9 @@ p {color: white;
     margin: 10px;
     text-align: left;}
 
-
+.carousel-item{
+    align-content: center;
+}
 
 
 
