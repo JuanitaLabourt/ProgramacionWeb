@@ -37,6 +37,11 @@ body {margin: 0px;
 .bot-inicio{color: rgb(16, 51, 168);} 
 h4 {font-size: 16px;}
 
+a:link{text-decoration: none;}
+a:visited{
+    text-decoration: none;
+    color: white;}
+a:hover{color: rgb(16, 51, 168);} 
 
 .buscador { grid-area: buscador; 
     background-color: rgb(28, 9, 84);
