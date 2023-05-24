@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>www.unipedia.com</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat&family=Mulish&display=swap" rel="stylesheet">
@@ -13,6 +13,40 @@
     <link rel="stylesheet" href="quienessomos.css">
 </head>
 <body>
-    
+    <div class="sticky" style="z-index: 100;">
+        <div class="container-header">
+          <div class="logo-principal"><img src="/Logos/logo.png" alt="Logo de Unipedia" width="50px"></div>
+          <div class="titulo-principal"><b>Unipedia</b></div>
+          <div class="espacio"></div>
+          <div class="botones-der"><h4><a href="/index.html"><b>Inicio</b></a></h4></div>
+          <div class="botones-der"><h4><b>Universidades</b></h4></div>
+          <div class="botones-der"><h4 class="ubicacion"><b>Quiénes somos</b></h4></div>
+        </div>
+    </div>      
+    <div class="informacion">
+        <div class="subtitulo">Nuestro equipo</div>
+        <p><i>Más de 20 años acompañando a estudianes a descubrir su carrera ideal.</i></p>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./nosotros1.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./nosotros2.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./nosotros3.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </body>
 </html>

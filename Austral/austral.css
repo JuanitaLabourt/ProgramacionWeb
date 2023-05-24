@@ -93,8 +93,11 @@ p {color: white;
     text-align: left;}
 
 .carousel-item{
-    align-content: center;
-}
+    align-content: center;}
+
+#carouselExampleFade{
+    display: flex;
+    justify-content: center;}
 
 
 
