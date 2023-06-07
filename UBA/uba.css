@@ -1,14 +1,182 @@
-body {background-color: rgb(14, 20, 128);}
+body {margin: 0px;
+    background-color: rgb(28, 9, 84);
+    font-family: 'Montserrat', sans-serif;}
 
-div {color: white;
+.sticky { grid-area: sticky; 
+    position: sticky;
+    top: 0;
+    background-color: rgb(73, 126, 224);}
+    
+.container-header{
+    display: flex;}
+
+.espacio{
+    flex-grow: 10;}
+
+.logo-principal {
+    flex-direction: flex-start;
+    padding: 10px ;}
+
+.titulo-principal {
+    flex-direction: flex-start;
+    justify-content: left;
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;}
+    color: white;}
+
+.botones-der{
+    flex-direction: flex-end;
+    justify-content: right;
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+    color: white;} 
+
+h4 {font-size: 16px;}
+
+a:link{text-decoration: none;
+    color: white;}
+a:visited{
+    text-decoration: none;
+    color: white;}
+a:hover{color: rgb(16, 51, 168);}    
+
+.container{margin-left: 65px;
+    margin-right: 91px;}
+.col{margin-bottom: 25px;}
+.card-body{min-height: 200px; 
+    margin-bottom: 10px;}
+.card-title{min-height: 50px;
+    margin-left: 10px;
+    font-size: 25px;}
+.card-text{color:black;}
+.btn-primary{margin-left: 10px;}
+
+.ubicacion {color: rgb(16, 51, 168);}
+
+.informacion {color: white;
+    margin-top: 20px;
+    font-size: 40px;}
+
+.nombre-universidad {
+    margin-left: 10px;
+    margin-bottom: 10px;}
 
 p {color: white;
     text-align: justify;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;}
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;}
 
-ul{color: white;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;}
+.tit-carreras{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;}
+
+.carreras{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 90px;
+    margin-right: 90px;
+    justify-content: space-around;}
+
+.nombre-carrera {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgb(89, 138, 217) ;
+    margin: 10px;
+    text-align: left;}
+
+.carousel-item{
+    align-content: center;}
+
+#carouselExampleFade{
+    display: flex;
+    justify-content: center;}
+
+
+
+@media screen and (max-width: 600px) {
+    body {margin: 0px;
+        background-color: rgb(28, 9, 84);
+        font-family: 'Montserrat', sans-serif;}
+    
+    .sticky { grid-area: sticky; 
+        position: sticky;
+        top: 0;
+        background-color: rgb(73, 126, 224);}
+    
+    .container{
+        display: flex;}
+    
+    .espacio{
+        flex-grow: 10;}
+    
+    .logo-principal {
+        flex-direction: flex-start;
+        padding: 10px ;}
+    
+    .titulo-principal {
+        flex-direction: flex-start;
+        justify-content: left;
+        flex-grow: 1;
+        text-align: center;
+        align-self: center;
+        font-size: 25px;
+        color: white;}
+    
+    .botones-der{
+        flex-direction: flex-end;
+        justify-content: right;
+        flex-grow: 1;
+        align-self: center;
+        text-align: center;
+        color: white;
+        font-size: 15px;} 
+    
+    .ubicacion {
+        color: rgb(16, 51, 168);}
+     
+
+    .informacion {color: white;
+        margin-top: 20px;
+        font-size: 40px;}
+    
+    .nombre-universidad {
+        font-size: 30px;}
+
+    p {color: white;
+        text-align: justify;
+        font-size: 12px;
+        margin-bottom: 30px;}
+    
+    .carreras{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-around;}
+    
+    .nombre-carrera {
+        color: white;
+        font-size: 15px;
+        padding: 13px;
+        background-color: rgb(89, 138, 217) ;
+        margin: 7px;
+        text-align: left;}}
+    
+    a:link{
+        text-decoration: none;}
+    a:visited{
+        text-decoration: none;
+        color: white;}
+    a:hover{
+        color: rgb(16, 51, 168);}
+    
+    
+        
