@@ -108,6 +108,26 @@ footer{
 .tamaño-foto-pie:hover{
     opacity: 0.5;}
 
+.producto {
+    display: inline-block;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    }
+.carrito {
+margin-top: 20px;
+color: white;
+border: 1px solid #ccc;
+padding: 10px;
+}
+
+.Carrito{
+    color:white;
+    font-size: 20px;
+}
+
 
 @media screen and (max-width: 600px) {
     body {margin: 0px;

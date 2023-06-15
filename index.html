@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat&family=Mulish&display=swap" rel="stylesheet">
-  
   </head>
 <body>
   <div class="sticky" style="z-index: 100;">
@@ -75,6 +74,46 @@
     <a href="./USAL/usal.html"><img class="tamaño-foto" src="./Logos/logo usal.png" width="230" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></a>
   </div>   
 </div>
+
+<div>
+  <h2 class="Carrito">Facultades</h2>
+  <div class="producto" onclick="agregarAlCarrito('Austral')">Austral</div>
+  <div class="producto" onclick="agregarAlCarrito('Di Tella')">Di Tella</div>
+  <div class="producto" onclick="agregarAlCarrito('ITBA')">ITBA</div>
+  <div class="producto" onclick="agregarAlCarrito('San Andres')">San Andres</div>
+  <div class="producto" onclick="agregarAlCarrito('UBA')">UBA</div>
+  <div class="producto" onclick="agregarAlCarrito('USAL')">USAL</div>
+</div>
+
+<div>
+  <h2 class="Carrito">Carrito de facultades</h2>
+  <div class="carrito" id="carrito"></div>
+  <div class="botones">
+    <button onclick="borrarCarrito()">Borrar carrito</button>
+  </div>
+</div>
+
+<script>
+  var carrito = [];
+  function agregarAlCarrito(item) {
+    if (carrito.indexOf(item) === -1) {
+      carrito.push(item);
+      actualizarCarrito();
+    } else {
+      alert('El elemento ya ha sido agregado al carrito');
+    } }
+  function borrarCarrito() {
+    carrito = [];
+    actualizarCarrito(); }
+  function actualizarCarrito() {
+    var carritoElemento = document.getElementById('carrito');
+    carritoElemento.innerHTML = '';
+
+    for (var i = 0; i < carrito.length; i++) {
+      var div = document.createElement('div');
+      div.textContent = carrito[i];
+      carritoElemento.appendChild(div);}}
+</script>
 </body>
 
 </head>
