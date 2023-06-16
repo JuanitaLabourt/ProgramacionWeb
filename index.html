@@ -47,46 +47,6 @@
     <a id="usal" href="./USAL/usal.html"><img class="tamaño-foto" src="./Logos/logo usal.png" width="230" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></a>
   </div>   
 </div>
-
-<div>
-  <h2 class="Carrito">Facultades</h2>
-  <div class="producto" onclick="agregarAlCarrito('Austral')">Austral</div>
-  <div class="producto" onclick="agregarAlCarrito('Di Tella')">Di Tella</div>
-  <div class="producto" onclick="agregarAlCarrito('ITBA')">ITBA</div>
-  <div class="producto" onclick="agregarAlCarrito('San Andres')">San Andres</div>
-  <div class="producto" onclick="agregarAlCarrito('UBA')">UBA</div>
-  <div class="producto" onclick="agregarAlCarrito('USAL')">USAL</div>
-</div>
-
-<div>
-  <h2 class="Carrito">Carrito de facultades</h2>
-  <div class="carrito" id="carrito"></div>
-  <div class="botones">
-    <button onclick="borrarCarrito()">Borrar carrito</button>
-  </div>
-</div>
-
-<script>
-  var carrito = [];
-  function agregarAlCarrito(item) {
-    if (carrito.indexOf(item) === -1) {
-      carrito.push(item);
-      actualizarCarrito();
-    } else {
-      alert('El elemento ya ha sido agregado al carrito');
-    } }
-  function borrarCarrito() {
-    carrito = [];
-    actualizarCarrito(); }
-  function actualizarCarrito() {
-    var carritoElemento = document.getElementById('carrito');
-    carritoElemento.innerHTML = '';
-
-    for (var i = 0; i < carrito.length; i++) {
-      var div = document.createElement('div');
-      div.textContent = carrito[i];
-      carritoElemento.appendChild(div);}}
-</script>
 </body>
 
 </head>
@@ -110,26 +70,63 @@
 
 
 <script>
-
-
-
 let selector = document.getElementById("filtro-universidad")
   selector.addEventListener("change", function(){
-
-    if(document.getElementById("filtro-universidad").title="Universidad Austral"){
+    let valor = document.getElementById("filtro-universidad").value
+    if(valor=="Uniersidad Austral"){
+      document.getElementById("austral").style.display="inline"  
       document.getElementById("ditella").style.display="none"
       document.getElementById("itba").style.display="none"
       document.getElementById("sana").style.display="none"
       document.getElementById("uba").style.display="none"
-      document.getElementById("usal").style.display="none"
-          
-    }
+      document.getElementById("usal").style.display="none"}
 
-  })
-;
+    if(valor=="ITBA"){
+      document.getElementById("itba").style.display="inline"
+      document.getElementById("austral").style.display="none"
+      document.getElementById("ditella").style.display="none"
+      document.getElementById("sana").style.display="none"
+      document.getElementById("uba").style.display="none"
+      document.getElementById("usal").style.display="none"}
 
-/* en vez de title y una universidad, que diga toas y en display inline
+    if(valor=="Todas"){
+      document.getElementById("itba").style.display="inline"
+      document.getElementById("austral").style.display="inline"
+      document.getElementById("ditella").style.display="inline"
+      document.getElementById("sana").style.display="inline"
+      document.getElementById("uba").style.display="inline"
+      document.getElementById("usal").style.display="inline"}
 
-/* document.getElementById("austral").style.display="none"
- */</script>
+    if(valor=="Universidad de Buenos Aires"){
+      document.getElementById("itba").style.display="none"
+      document.getElementById("austral").style.display="none"
+      document.getElementById("ditella").style.display="none"
+      document.getElementById("sana").style.display="none"
+      document.getElementById("uba").style.display="inline"
+      document.getElementById("usal").style.display="none"}
+
+    if(valor=="Universiad de San Andrés"){
+      document.getElementById("itba").style.display="none"
+      document.getElementById("austral").style.display="none"
+      document.getElementById("ditella").style.display="none"
+      document.getElementById("sana").style.display="inline"
+      document.getElementById("uba").style.display="none"
+      document.getElementById("usal").style.display="none"}
+
+    if(valor=="Universidad del Salvador"){
+      document.getElementById("itba").style.display="none"
+      document.getElementById("austral").style.display="none"
+      document.getElementById("ditella").style.display="none"
+      document.getElementById("sana").style.display="none"
+      document.getElementById("uba").style.display="none"
+      document.getElementById("usal").style.display="inline"}
+    
+    if(valor=="Universidad Torcuato Di Tella"){
+      document.getElementById("itba").style.display="none"
+      document.getElementById("austral").style.display="none"
+      document.getElementById("ditella").style.display="inline"
+      document.getElementById("sana").style.display="none"
+      document.getElementById("uba").style.display="none"
+      document.getElementById("usal").style.display="none"}})
+</script>
 </html>

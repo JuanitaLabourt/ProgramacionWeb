@@ -108,25 +108,6 @@ footer{
 .tamaño-foto-pie:hover{
     opacity: 0.5;}
 
-.producto {
-    display: inline-block;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    }
-.carrito {
-margin-top: 20px;
-color: white;
-border: 1px solid #ccc;
-padding: 10px;
-}
-
-.Carrito{
-    color:white;
-    font-size: 20px;
-}
 
 
 @media screen and (max-width: 600px) {
@@ -203,8 +184,6 @@ padding: 10px;
 }
 
 /* IDEA PARA JAVA SCRIPT: Hacer un carrito de favoritos donde pueden agragar una carrera que le guste.
-/* Lo de filtros ya es JavaScript
-/* hacer que los filtros funcionen
 /*{border:1px solid red}
 /*body {background-color: rgb(28, 9, 84);}
 
