@@ -36,42 +36,15 @@
           <option value="Universidad del Salvador">Universidad del Salvador</option>
           <option value="Universidad Torcuato Di Tella">Universidad Torcuato Di Tella</option>
         </select>
-        
-        <label for="filtro-carreras">Carreras:</label>
-        <select id="filtro-carreras" name="carreras">
-          <option value="Todas">Todas</option>
-          <option value="Administración">Administración</option>
-          <option value="Arquitectura">Arquitectura</option>
-          <option value="Ciencias políticas">Ciencias políticas</option>
-          <option value="Comunicación">Comunicación</option>
-          <option value="Derecho">Derecho</option>
-          <option value="Diseño">Diseño</option>
-          <option value="Economía">Economía</option>
-          <option value="Ingeniería industrial">Ingeniería industrial</option>
-          <option value="Ingeniería informática">Ingeniería informática</option>
-          <option value="Ingeniería naval">Ingeniería naval</option>
-          <option value="Medicina">Medicina</option>
-          <option value="Psicología">Psicología</option>
-          <option value="Relaciones internacionales">Relaciones internacionales</option>
-        </select>
-        
-        <label for="filtro-modalidad">Modalidad:</label>
-        <select id="filtro-modalidad" name="modalidad">
-          <option value="Todas">Todas</option>
-          <option value="Presencial">Presencial</option>
-          <option value="Semi presencial">Semi presencial</option>
-          <option value="Virtual">Virtual</option>
-        </select>
-        <input type="submit" value="Buscar">
       </form>
   </div>
   <div class="universidades">
-    <a href="./Austral/austral.html"><img class="tamaño-foto" src="./Logos/logo austral.png" alt="Logo de la Universidad Austral" title="Universidad Austral"/></a>
-    <a href="./Di Tella/DiTella.html"><img class="tamaño-foto" src="./Logos/logo ditella.png" alt="Logo de la Universidad Di Tella" title="Universidad Torcuato Di Tella"/></a>
-    <a href="./ITBA/itba.html"><img class="tamaño-foto" src="./Logos/logo itba.png" width="250" alt="Logo del ITBA" title="Instituto Tecnológico de Buenos Aires"/></a>
-    <a href="./San Andres/SanAndres.html"><img class="tamaño-foto" src="./Logos/logo san andres.png" alt="Logo de la Universidad de San Andrés" title="Universidad de San Andrés"/></a>
-    <a href="./UBA/uba.html"><img class="tamaño-foto" src="./Logos/logo uba.png" width="180" alt="Logo de la Universidad de Buenos Aires" title="Universidad de Buenos Aires"/></a>
-    <a href="./USAL/usal.html"><img class="tamaño-foto" src="./Logos/logo usal.png" width="230" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></a>
+    <a id="austral" href="./Austral/austral.html"><img class="tamaño-foto" src="./Logos/logo austral.png" alt="Logo de la Universidad Austral" title="Universidad Austral" value="austral"/></a>
+    <a id="ditella" href="./Di Tella/DiTella.html"><img class="tamaño-foto" src="./Logos/logo ditella.png" alt="Logo de la Universidad Di Tella" title="Universidad Torcuato Di Tella"/></a>
+    <a id="itba" href="./ITBA/itba.html"><img class="tamaño-foto" src="./Logos/logo itba.png" width="250" alt="Logo del ITBA" title="Instituto Tecnológico de Buenos Aires"/></a>
+    <a id="sana" href="./San Andres/SanAndres.html"><img class="tamaño-foto" src="./Logos/logo san andres.png" alt="Logo de la Universidad de San Andrés" title="Universidad de San Andrés"/></a>
+    <a id="uba" href="./UBA/uba.html"><img class="tamaño-foto" src="./Logos/logo uba.png" width="180" alt="Logo de la Universidad de Buenos Aires" title="Universidad de Buenos Aires"/></a>
+    <a id="usal" href="./USAL/usal.html"><img class="tamaño-foto" src="./Logos/logo usal.png" width="230" alt="Logo de la Universidad del Salvador" title="Universidad del Salvador"/></a>
   </div>   
 </div>
 
@@ -134,7 +107,29 @@
       </div>
     </div>
 </footer>
+
+
 <script>
-  
-</script>
+
+
+
+let selector = document.getElementById("filtro-universidad")
+  selector.addEventListener("change", function(){
+
+    if(document.getElementById("filtro-universidad").title="Universidad Austral"){
+      document.getElementById("ditella").style.display="none"
+      document.getElementById("itba").style.display="none"
+      document.getElementById("sana").style.display="none"
+      document.getElementById("uba").style.display="none"
+      document.getElementById("usal").style.display="none"
+          
+    }
+
+  })
+;
+
+/* en vez de title y una universidad, que diga toas y en display inline
+
+/* document.getElementById("austral").style.display="none"
+ */</script>
 </html>

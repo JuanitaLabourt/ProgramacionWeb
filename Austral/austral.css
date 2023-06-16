@@ -43,8 +43,6 @@ a:visited{
     color: white;}
 a:hover{color: rgb(16, 51, 168);}    
 
-.container{margin-left: 65px;
-    margin-right: 91px;}
 .col{margin-bottom: 25px;}
 .card-body{min-height: 200px; 
     margin-bottom: 10px;}
