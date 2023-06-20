@@ -99,6 +99,35 @@ p {color: white;
     display: flex;
     justify-content: center;}
 
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(73, 126, 224);}    
+
+.pie-pag {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "info-izq . info-der"
+        "info-izq . info-der"
+        "info-izq . info-der";
+    font-size: 20px;}
+    
+.info-izq { grid-area: info-izq; 
+    margin-left: 50px;}
+
+.info-der { grid-area: info-der; }
+    
+.tit{font-size: 25px;
+    color: white;}
+.inf{color: white;
+    font-size: 15px;}
+.tamaño-foto-pie{
+    width: 2vw;}
+.tamaño-foto-pie:hover{
+    opacity: 0.5;}
 
 
 @media screen and (max-width: 600px) {
