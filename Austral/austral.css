@@ -147,7 +147,8 @@ footer{
     
     .logo-principal {
         flex-direction: flex-start;
-        padding: 10px ;}
+        text-align: center;
+        align-self: center;}
     
     .titulo-principal {
         flex-direction: flex-start;
@@ -159,13 +160,15 @@ footer{
         color: white;}
     
     .botones-der{
+        font-size: 4px;
         flex-direction: flex-end;
         justify-content: right;
         flex-grow: 1;
         align-self: center;
         text-align: center;
-        color: white;
-        font-size: 15px;} 
+        color: white;} 
+    
+    h4{font-size: 12px;}
     
     .ubicacion {
         color: rgb(16, 51, 168);}

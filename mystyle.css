@@ -149,6 +149,7 @@ footer{
         color: white;
         font-size: 15px;}    
     
+    h4{font-size: 12px;}
     
     .buscador { grid-area: buscador; 
         background-color: rgb(28, 9, 84);
