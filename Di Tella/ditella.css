@@ -142,7 +142,20 @@ footer{
         background-color: rgb(73, 126, 224);}
     
     .container{
-        display: flex;}
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 0px;}
+    .col{display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 0px;
+        margin-bottom: 15px;}
+    
     
     .espacio{
         flex-grow: 10;}
@@ -200,7 +213,7 @@ footer{
         padding: 13px;
         background-color: rgb(89, 138, 217) ;
         margin: 7px;
-        text-align: left;}}
+        text-align: left;}
     
     a:link{
         text-decoration: none;}
@@ -209,3 +222,5 @@ footer{
         color: white;}
     a:hover{
         color: rgb(16, 51, 168);}
+
+    }

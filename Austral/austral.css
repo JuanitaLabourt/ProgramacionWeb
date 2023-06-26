@@ -140,7 +140,19 @@ footer{
         background-color: rgb(73, 126, 224);}
     
     .container{
-        display: flex;}
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 0px;}
+    .col{display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 0px;
+        margin-bottom: 15px;}
     
     .espacio{
         flex-grow: 10;}
